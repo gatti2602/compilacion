@@ -3,7 +3,7 @@
 // -----------------------------------
 //  (gcc va a precompilar, compilar y linkear)
 //
-// Aunque se llama al compilador una sola vez, el compilador 
+// Aunque se llama al compilador una sola vez, el compilador
 // Precompila + Compila cada fuente .c por separado
 // y luego linkea todos los codigos objeto .o en un solo ejecutable
 // resolviendo todas las direcciones de las funciones:
@@ -19,8 +19,8 @@
 // -----------------------------------
 //
 // 1) Precompilar + Compilar cada fuente por separado
-//  gcc -Wall -Werror -std=c99 -pedantic -c 06_main.c 
-//  gcc -Wall -Werror -std=c99 -pedantic -c 06_libby2.c          
+//  gcc -Wall -Werror -std=c99 -pedantic -c 06_main.c
+//  gcc -Wall -Werror -std=c99 -pedantic -c 06_libby2.c
 //  gcc -Wall -Werror -std=c99 -pedantic -c 06_libby3.c
 //
 // 2) y luego linkear los objetos:
@@ -57,13 +57,13 @@
 // [4]
 // Armar un ejecutable por el Metodo 4:
 // -----------------------------------
-// 
+//
 // 1) Precompilar + Compilar y "Empaquetar" los codigos de una lib (notese el nombre de la lib)
 //  gcc -Wall -Werror -std=c99 -pedantic -c 06_libby2.c 06_libby3.c
 //  ar -rc lib06_lib.a 06_libby2.o 06_libby3.o
 //
 // 2) y luego compilar el resto del proyecto y linkear con la lib
-//  gcc -Wall -Werror -std=c99 -pedantic -o 06_main 06_main.c -l06_lib
+//  gcc -Wall -Werror -std=c99 -pedantic -o 06_main.exe 06_main.c -l06_lib
 //
 // Tira error, no? el flag "-l" y su argumento "06_lib" le dicen a gcc que hay
 // que buscar una libreria llamada "lib06_lib.a" en las carpetas del sistema.
