@@ -1,7 +1,7 @@
-#include "class0.h"
-#include "class1.h"
-#include "class2.h"
-#include "class3.h"
+#include "classes/class0.h"
+#include "classes/class1.h"
+#include "classes/class2.h"
+#include "classes/class3.h"
 
 int main(int argc, char** argv) {
 	Class0 c0;
